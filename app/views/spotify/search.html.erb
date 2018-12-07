@@ -1,0 +1,13 @@
+<h1>Resultados de busqueda</h1>
+
+<% @results.each do |results| %>
+  <ul>
+    <li>Name: <%= results.name  %></li>
+    <li>popularity: <%= results.popularity %></li>
+    <li>id: <%= results.id  %></li>
+    <li>Imagen: <%= results.images[3]  %></li>
+  </ul>
+  <div>-------------------------</div>
+<% end %>
+
+

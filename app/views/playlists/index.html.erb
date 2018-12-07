@@ -1,0 +1,18 @@
+<h1>Listado de listas de reproducción</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Number of votes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @playlists.each do |playlists| %>
+      <tr>
+        <td><%= playlists.name %></td>
+        <td><%= playlists.number_of_votes %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
